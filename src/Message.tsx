@@ -1,8 +1,9 @@
 ﻿import React from 'react';
-import {IState} from './App'
+import messageHoc from './Hoc';
 
-const Message = (um: IState): any => 
-    <p>{ um.name }, { um.message }</p>
+const component = (props: any): any => <p>{props.name}, {props.message}</p>
+
+const Message = messageHoc(component);
 
 export default Message;
 
