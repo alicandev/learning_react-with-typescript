@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 
-const Message = () => <p>This is a quick message!</p>
+const Message = (prop: {message: string}): any => <p>{prop.message}</p>
 
 export default Message;
 
