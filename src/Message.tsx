@@ -1,11 +1,7 @@
 ﻿import React from 'react';
+import {IState} from './App'
 
-interface UserMessage {
-    name: string;
-    message: string;
-}
-
-const Message = (um: UserMessage): any => 
+const Message = (um: IState): any => 
     <p>{ um.name }, { um.message }</p>
 
 export default Message;
